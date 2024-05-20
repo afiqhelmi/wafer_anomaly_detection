@@ -3,6 +3,7 @@ This repositories intended to detect anomaly on wafer through 46 sensors value u
 
 #Prerequisite
 1. R version >= 4
+2. R Studio 2024.04.1+748
 
 #Instructions
 1. install all necessary libraries (RStudio -> Tools -> Install Packages)
