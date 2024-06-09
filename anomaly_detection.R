@@ -99,7 +99,7 @@ server <- function(input, output, session) {
     df <- dbReadTable(db, input$table_select)
     
     # Filter rows based on DATA_QUALITY
-    df <- df %>% filter(DATA_QUALITY < 90)
+    df <- df %>% filter(DATA_QUALITY > 60)
     
     # Remove rows where the column next to WAFER_ID is NA or empty
     wafer_id_col_index <- which(names(df) == "WAFER_ID")
